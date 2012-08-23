@@ -24,9 +24,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     SimpleSwitch *swith =[[SimpleSwitch alloc] initWithFrame:CGRectMake(24, 34, 14, 25)];
-    swith.titleOn = @"OFF";
     [self.view addSubview:swith];
     [swith release];
+   
     SimpleSwitch *swith2 =[[SimpleSwitch alloc] initWithFrame:CGRectMake(24, 84, 100, 25)];
     swith2.titleOn = @"本地";
     swith2.titleOff = @"网络";

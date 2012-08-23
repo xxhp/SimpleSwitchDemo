@@ -45,8 +45,8 @@
 -(void)setUpWithDefault{
     self.backgroundColor = [UIColor clearColor] ;
     
-    frameOn = CGRectMake(1,1,self.bounds.size.width/2-2, self.bounds.size.height-2);
-    frameOff = CGRectMake(1+self.bounds.size.width/2,1,self.bounds.size.width/2-2, self.bounds.size.height-2);
+    frameOff = CGRectMake(1,1,self.bounds.size.width/2-2, self.bounds.size.height-2);
+    frameOn = CGRectMake(1+self.bounds.size.width/2,1,self.bounds.size.width/2-2, self.bounds.size.height-2);
     self.titleOn = kDefaultTitleOn;
     self.titleOff = kDefaultTitleOff;
     self.fillColor = [UIColor darkGrayColor];
@@ -86,13 +86,13 @@
         CGRect frm =knobButton.frame;
         frm.origin.x += frm.size.width;
         if (on) {
-            knobButton.frame = frameOn;
+            knobButton.frame = frameOff;
             on = !on;
             [self setNeedsDisplay];
             [knobButton setTitle:self.titleOff forState:UIControlStateNormal];
             [knobButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
         }else{
-            knobButton.frame = frameOff;
+            knobButton.frame = frameOn;
             on = !on;
             [self setNeedsDisplay];
             [knobButton setTitle:self.titleOn forState:UIControlStateNormal];
@@ -153,13 +153,13 @@
         
 		if (self.on)
 		{
-			knobButton.frame = frameOff;
+			knobButton.frame = frameOn;
             [knobButton setTitle:self.titleOn forState:UIControlStateNormal];
             [knobButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
 		}
 		else
 		{
-			knobButton.frame = frameOn;
+			knobButton.frame = frameOff;
             [knobButton setTitle:self.titleOff forState:UIControlStateNormal];
             [knobButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
 		}
