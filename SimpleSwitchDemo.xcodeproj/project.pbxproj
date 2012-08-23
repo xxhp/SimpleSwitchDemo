@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11E1FB2515E66E5800659FC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E1FB2415E66E5800659FC4 /* UIKit.framework */; };
+		11E1FB2715E66E5800659FC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E1FB2615E66E5800659FC4 /* Foundation.framework */; };
+		11E1FB2915E66E5800659FC4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E1FB2815E66E5800659FC4 /* CoreGraphics.framework */; };
+		11E1FB2F15E66E5800659FC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11E1FB2D15E66E5800659FC4 /* InfoPlist.strings */; };
+		11E1FB3115E66E5800659FC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E1FB3015E66E5800659FC4 /* main.m */; };
+		11E1FB3515E66E5800659FC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E1FB3415E66E5800659FC4 /* AppDelegate.m */; };
+		11E1FB3815E66E5800659FC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E1FB3715E66E5800659FC4 /* ViewController.m */; };
+		11E1FB3B15E66E5900659FC4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11E1FB3915E66E5900659FC4 /* ViewController.xib */; };
+		11E1FB4315E66E5900659FC4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E1FB4215E66E5900659FC4 /* SenTestingKit.framework */; };
+		11E1FB4415E66E5900659FC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E1FB2415E66E5800659FC4 /* UIKit.framework */; };
+		11E1FB4515E66E5900659FC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E1FB2615E66E5800659FC4 /* Foundation.framework */; };
+		11E1FB4D15E66E5900659FC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11E1FB4B15E66E5900659FC4 /* InfoPlist.strings */; };
+		11E1FB5015E66E5900659FC4 /* SimpleSwitchDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E1FB4F15E66E5900659FC4 /* SimpleSwitchDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11E1FB4615E66E5900659FC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11E1FB1715E66E5800659FC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11E1FB1F15E66E5800659FC4;
+			remoteInfo = SimpleSwitchDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11E1FB2015E66E5800659FC4 /* SimpleSwitchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSwitchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11E1FB2415E66E5800659FC4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		11E1FB2615E66E5800659FC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		11E1FB2815E66E5800659FC4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		11E1FB2C15E66E5800659FC4 /* SimpleSwitchDemo-Info.plist */ = {isa = PBXFileReference; path = "SimpleSwitchDemo-Info.plist"; sourceTree = "<group>"; };
+		11E1FB2E15E66E5800659FC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		11E1FB3015E66E5800659FC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11E1FB3215E66E5800659FC4 /* SimpleSwitchDemo-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleSwitchDemo-Prefix.pch"; sourceTree = "<group>"; };
+		11E1FB3315E66E5800659FC4 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		11E1FB3415E66E5800659FC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		11E1FB3615E66E5800659FC4 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		11E1FB3715E66E5800659FC4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		11E1FB3A15E66E5900659FC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		11E1FB4115E66E5900659FC4 /* SimpleSwitchDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleSwitchDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11E1FB4215E66E5900659FC4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		11E1FB4A15E66E5900659FC4 /* SimpleSwitchDemoTests-Info.plist */ = {isa = PBXFileReference; path = "SimpleSwitchDemoTests-Info.plist"; sourceTree = "<group>"; };
+		11E1FB4C15E66E5900659FC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		11E1FB4E15E66E5900659FC4 /* SimpleSwitchDemoTests.h */ = {isa = PBXFileReference; path = SimpleSwitchDemoTests.h; sourceTree = "<group>"; };
+		11E1FB4F15E66E5900659FC4 /* SimpleSwitchDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleSwitchDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11E1FB1D15E66E5800659FC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E1FB2515E66E5800659FC4 /* UIKit.framework in Frameworks */,
+				11E1FB2715E66E5800659FC4 /* Foundation.framework in Frameworks */,
+				11E1FB2915E66E5800659FC4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E1FB3D15E66E5900659FC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E1FB4315E66E5900659FC4 /* SenTestingKit.framework in Frameworks */,
+				11E1FB4415E66E5900659FC4 /* UIKit.framework in Frameworks */,
+				11E1FB4515E66E5900659FC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11E1FB1515E66E5800659FC4 = {
+			isa = PBXGroup;
+			children = (
+				11E1FB2A15E66E5800659FC4 /* SimpleSwitchDemo */,
+				11E1FB4815E66E5900659FC4 /* SimpleSwitchDemoTests */,
+				11E1FB2315E66E5800659FC4 /* Frameworks */,
+				11E1FB2115E66E5800659FC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11E1FB2115E66E5800659FC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11E1FB2015E66E5800659FC4 /* SimpleSwitchDemo.app */,
+				11E1FB4115E66E5900659FC4 /* SimpleSwitchDemoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11E1FB2315E66E5800659FC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11E1FB2415E66E5800659FC4 /* UIKit.framework */,
+				11E1FB2615E66E5800659FC4 /* Foundation.framework */,
+				11E1FB2815E66E5800659FC4 /* CoreGraphics.framework */,
+				11E1FB4215E66E5900659FC4 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11E1FB2A15E66E5800659FC4 /* SimpleSwitchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				11E1FB3315E66E5800659FC4 /* AppDelegate.h */,
+				11E1FB3415E66E5800659FC4 /* AppDelegate.m */,
+				11E1FB3615E66E5800659FC4 /* ViewController.h */,
+				11E1FB3715E66E5800659FC4 /* ViewController.m */,
+				11E1FB3915E66E5900659FC4 /* ViewController.xib */,
+				11E1FB2B15E66E5800659FC4 /* Supporting Files */,
+			);
+			path = SimpleSwitchDemo;
+			sourceTree = "<group>";
+		};
+		11E1FB2B15E66E5800659FC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11E1FB2C15E66E5800659FC4 /* SimpleSwitchDemo-Info.plist */,
+				11E1FB2D15E66E5800659FC4 /* InfoPlist.strings */,
+				11E1FB3015E66E5800659FC4 /* main.m */,
+				11E1FB3215E66E5800659FC4 /* SimpleSwitchDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11E1FB4815E66E5900659FC4 /* SimpleSwitchDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				11E1FB4E15E66E5900659FC4 /* SimpleSwitchDemoTests.h */,
+				11E1FB4F15E66E5900659FC4 /* SimpleSwitchDemoTests.m */,
+				11E1FB4915E66E5900659FC4 /* Supporting Files */,
+			);
+			path = SimpleSwitchDemoTests;
+			sourceTree = "<group>";
+		};
+		11E1FB4915E66E5900659FC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11E1FB4A15E66E5900659FC4 /* SimpleSwitchDemoTests-Info.plist */,
+				11E1FB4B15E66E5900659FC4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11E1FB1F15E66E5800659FC4 /* SimpleSwitchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11E1FB5315E66E5900659FC4 /* Build configuration list for PBXNativeTarget "SimpleSwitchDemo" */;
+			buildPhases = (
+				11E1FB1C15E66E5800659FC4 /* Sources */,
+				11E1FB1D15E66E5800659FC4 /* Frameworks */,
+				11E1FB1E15E66E5800659FC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleSwitchDemo;
+			productName = SimpleSwitchDemo;
+			productReference = 11E1FB2015E66E5800659FC4 /* SimpleSwitchDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11E1FB4015E66E5900659FC4 /* SimpleSwitchDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11E1FB5615E66E5900659FC4 /* Build configuration list for PBXNativeTarget "SimpleSwitchDemoTests" */;
+			buildPhases = (
+				11E1FB3C15E66E5900659FC4 /* Sources */,
+				11E1FB3D15E66E5900659FC4 /* Frameworks */,
+				11E1FB3E15E66E5900659FC4 /* Resources */,
+				11E1FB3F15E66E5900659FC4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11E1FB4715E66E5900659FC4 /* PBXTargetDependency */,
+			);
+			name = SimpleSwitchDemoTests;
+			productName = SimpleSwitchDemoTests;
+			productReference = 11E1FB4115E66E5900659FC4 /* SimpleSwitchDemoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11E1FB1715E66E5800659FC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 11E1FB1A15E66E5800659FC4 /* Build configuration list for PBXProject "SimpleSwitchDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 11E1FB1515E66E5800659FC4;
+			productRefGroup = 11E1FB2115E66E5800659FC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11E1FB1F15E66E5800659FC4 /* SimpleSwitchDemo */,
+				11E1FB4015E66E5900659FC4 /* SimpleSwitchDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11E1FB1E15E66E5800659FC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E1FB2F15E66E5800659FC4 /* InfoPlist.strings in Resources */,
+				11E1FB3B15E66E5900659FC4 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E1FB3E15E66E5900659FC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E1FB4D15E66E5900659FC4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11E1FB3F15E66E5900659FC4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11E1FB1C15E66E5800659FC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E1FB3115E66E5800659FC4 /* main.m in Sources */,
+				11E1FB3515E66E5800659FC4 /* AppDelegate.m in Sources */,
+				11E1FB3815E66E5800659FC4 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E1FB3C15E66E5900659FC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E1FB5015E66E5900659FC4 /* SimpleSwitchDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11E1FB4715E66E5900659FC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11E1FB1F15E66E5800659FC4 /* SimpleSwitchDemo */;
+			targetProxy = 11E1FB4615E66E5900659FC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11E1FB2D15E66E5800659FC4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11E1FB2E15E66E5800659FC4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		11E1FB3915E66E5900659FC4 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11E1FB3A15E66E5900659FC4 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		11E1FB4B15E66E5900659FC4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11E1FB4C15E66E5900659FC4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11E1FB5115E66E5900659FC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		11E1FB5215E66E5900659FC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11E1FB5415E66E5900659FC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleSwitchDemo/SimpleSwitchDemo-Prefix.pch";
+				INFOPLIST_FILE = "SimpleSwitchDemo/SimpleSwitchDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		11E1FB5515E66E5900659FC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleSwitchDemo/SimpleSwitchDemo-Prefix.pch";
+				INFOPLIST_FILE = "SimpleSwitchDemo/SimpleSwitchDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		11E1FB5715E66E5900659FC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleSwitchDemo.app/SimpleSwitchDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleSwitchDemo/SimpleSwitchDemo-Prefix.pch";
+				INFOPLIST_FILE = "SimpleSwitchDemoTests/SimpleSwitchDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		11E1FB5815E66E5900659FC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleSwitchDemo.app/SimpleSwitchDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleSwitchDemo/SimpleSwitchDemo-Prefix.pch";
+				INFOPLIST_FILE = "SimpleSwitchDemoTests/SimpleSwitchDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11E1FB1A15E66E5800659FC4 /* Build configuration list for PBXProject "SimpleSwitchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E1FB5115E66E5900659FC4 /* Debug */,
+				11E1FB5215E66E5900659FC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11E1FB5315E66E5900659FC4 /* Build configuration list for PBXNativeTarget "SimpleSwitchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E1FB5415E66E5900659FC4 /* Debug */,
+				11E1FB5515E66E5900659FC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		11E1FB5615E66E5900659FC4 /* Build configuration list for PBXNativeTarget "SimpleSwitchDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E1FB5715E66E5900659FC4 /* Debug */,
+				11E1FB5815E66E5900659FC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11E1FB1715E66E5800659FC4 /* Project object */;
+}
