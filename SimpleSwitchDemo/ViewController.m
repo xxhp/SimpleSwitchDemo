@@ -2,10 +2,11 @@
 //  ViewController.m
 //  SimpleSwitchDemo
 //
-//  Created by  on 8/23/12.
+//  Created by xiao haibo on 8/23/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+#import "SimpleSwitch.h"
 #import "ViewController.h"
 
 @implementation ViewController
@@ -22,6 +23,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    SimpleSwitch *swith =[[SimpleSwitch alloc] initWithFrame:CGRectMake(24, 34, 14, 25)];
+    swith.titleOn = @"OFF";
+    [self.view addSubview:swith];
+    [swith release];
+    SimpleSwitch *swith2 =[[SimpleSwitch alloc] initWithFrame:CGRectMake(24, 84, 100, 25)];
+    swith2.titleOn = @"本地";
+    swith2.titleOff = @"网络";
+    swith2.on = YES;
+    swith2.knobColor = [UIColor colorWithRed:0.341 green:0.983 blue:0.13 alpha:1];
+    swith2.fillColor = [UIColor colorWithRed:0.1 green:0.1 blue:0.1 alpha:1];
+    [self.view addSubview:swith2];
+    [swith2 release];
 }
 
 - (void)viewDidUnload

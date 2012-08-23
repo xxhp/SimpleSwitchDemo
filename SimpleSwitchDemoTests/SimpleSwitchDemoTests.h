@@ -2,7 +2,7 @@
 //  SimpleSwitchDemoTests.h
 //  SimpleSwitchDemoTests
 //
-//  Created by  on 8/23/12.
+//  Created by xiao haibo on 8/23/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
