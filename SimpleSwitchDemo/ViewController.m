@@ -33,6 +33,7 @@
     swith2.on = YES;
     swith2.knobColor = [UIColor colorWithRed:0.341 green:0.983 blue:0.13 alpha:1];
     swith2.fillColor = [UIColor colorWithRed:0.1 green:0.1 blue:0.1 alpha:1];
+    [swith2 addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:swith2];
     [swith2 release];
 }
@@ -68,6 +69,10 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+-(void)valueChanged:(id)sender
+{
+    NSLog(@"switch state: %d",((SimpleSwitch*)sender).on);
 }
 
 @end
