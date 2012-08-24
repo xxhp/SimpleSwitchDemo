@@ -51,6 +51,7 @@
     self.titleOff = kDefaultTitleOff;
     self.fillColor = [UIColor darkGrayColor];
     self.knobColor = [UIColor whiteColor];
+    on= NO;
     
     titleLayer = [[TitleLayer alloc] initWithOnString:self.titleOn offString:self.titleOff];
     titleLayer.frame = self.bounds;
@@ -71,7 +72,7 @@
     UITapGestureRecognizer *gest = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleTap:)];
     [self addGestureRecognizer:gest];
     [gest release];
-    on= NO;
+   
     
 }
 -(void)drawRect:(CGRect)rect{
