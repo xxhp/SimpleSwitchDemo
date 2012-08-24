@@ -13,8 +13,8 @@
 @interface SimpleSwitch : UIControl<UIGestureRecognizerDelegate>
 {
     KnobButton *knobButton;
-    CGRect frameOn;
-    CGRect frameOff;
+    CGRect knobFrameOn;
+    CGRect knobFrameOff;
     BOOL on;
     NSString *titleOn;
     NSString *titleOff;

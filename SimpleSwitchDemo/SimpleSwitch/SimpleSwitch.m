@@ -45,12 +45,14 @@
 -(void)setUpWithDefault{
     self.backgroundColor = [UIColor clearColor] ;
     
-    frameOff = CGRectMake(1,1,self.bounds.size.width/2-2, self.bounds.size.height-2);
-    frameOn = CGRectMake(1+self.bounds.size.width/2,1,self.bounds.size.width/2-2, self.bounds.size.height-2);
+    knobFrameOff = CGRectMake(1,1,self.bounds.size.width/2-2, self.bounds.size.height-2);
+    knobFrameOn = CGRectMake(1+self.bounds.size.width/2,1,self.bounds.size.width/2-2, self.bounds.size.height-2);
+   
     self.titleOn = kDefaultTitleOn;
     self.titleOff = kDefaultTitleOff;
     self.fillColor = [UIColor darkGrayColor];
-    self.knobColor = [UIColor whiteColor];
+    self.knobColor = [UIColor colorWithRed:223.0/255 green:223.0/255 blue:223.0/255 alpha:1];
+   
     on= NO;
     
     titleLayer = [[TitleLayer alloc] initWithOnString:self.titleOn offString:self.titleOff];
@@ -63,16 +65,15 @@
     [knobButton setTitle:titleOff forState:UIControlStateNormal];
     [self addSubview:knobButton];
     
-    UIPanGestureRecognizer *panG = [[UIPanGestureRecognizer alloc] initWithTarget:self 
-                                                                           action:@selector(handlePan:)];
-    panG.delegate = self;
-    [knobButton addGestureRecognizer:panG];
-    [panG release];
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+    panGesture.delegate = self;
+    [knobButton addGestureRecognizer:panGesture];
+    [panGesture release];
     
-    UITapGestureRecognizer *gest = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleTap:)];
-    [self addGestureRecognizer:gest];
-    [gest release];
-   
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleTap:)];
+    [self addGestureRecognizer:tapGesture];
+    [tapGesture release];
+    
     
 }
 -(void)drawRect:(CGRect)rect{
@@ -82,18 +83,18 @@
 }
 #pragma mark -
 #pragma mark UIGestureRecognizer
--(void) handleTap: (UITapGestureRecognizer *) tap {
-    if(CGRectContainsPoint(knobButton.frame,[tap locationInView:self]) !=YES){
+-(void) handleTap: (UITapGestureRecognizer *) sender {
+    if(CGRectContainsPoint(knobButton.frame,[sender locationInView:self]) !=YES){
         CGRect frm =knobButton.frame;
         frm.origin.x += frm.size.width;
         if (on) {
-            knobButton.frame = frameOff;
+            knobButton.frame = knobFrameOff;
             on = !on;
             [self setNeedsDisplay];
             [knobButton setTitle:self.titleOff forState:UIControlStateNormal];
             [knobButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
         }else{
-            knobButton.frame = frameOn;
+            knobButton.frame = knobFrameOn;
             on = !on;
             [self setNeedsDisplay];
             [knobButton setTitle:self.titleOn forState:UIControlStateNormal];
@@ -154,13 +155,13 @@
         
 		if (self.on)
 		{
-			knobButton.frame = frameOn;
+			knobButton.frame = knobFrameOn;
             [knobButton setTitle:self.titleOn forState:UIControlStateNormal];
             [knobButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
 		}
 		else
 		{
-			knobButton.frame = frameOff;
+			knobButton.frame = knobFrameOff;
             [knobButton setTitle:self.titleOff forState:UIControlStateNormal];
             [knobButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
 		}
