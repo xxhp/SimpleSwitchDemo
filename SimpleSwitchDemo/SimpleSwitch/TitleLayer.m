@@ -33,11 +33,6 @@
 	return self;
 }
 
-- (UIFont *)labelFont
-{
-	return [UIFont boldSystemFontOfSize:ceilf(self.bounds.size.height * .6)];
-}
-
 - (void)drawInContext:(CGContextRef)context
 {
 	UIGraphicsPushContext(context);
