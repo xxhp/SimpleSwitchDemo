@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11546FC915E7B4F9002D4C96 /* iOS Simulator Screen shot Aug 24, 2012 9.10.20 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 11546FC715E7B4F9002D4C96 /* iOS Simulator Screen shot Aug 24, 2012 9.10.20 PM.png */; };
+		11546FCA15E7B4F9002D4C96 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 11546FC815E7B4F9002D4C96 /* README.md */; };
 		11E1FB2515E66E5800659FC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E1FB2415E66E5800659FC4 /* UIKit.framework */; };
 		11E1FB2715E66E5800659FC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E1FB2615E66E5800659FC4 /* Foundation.framework */; };
 		11E1FB2915E66E5800659FC4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E1FB2815E66E5800659FC4 /* CoreGraphics.framework */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11546FC715E7B4F9002D4C96 /* iOS Simulator Screen shot Aug 24, 2012 9.10.20 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Aug 24, 2012 9.10.20 PM.png"; sourceTree = SOURCE_ROOT; };
+		11546FC815E7B4F9002D4C96 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		11E1FB2015E66E5800659FC4 /* SimpleSwitchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSwitchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E1FB2415E66E5800659FC4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		11E1FB2615E66E5800659FC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,6 +100,7 @@
 		11E1FB1515E66E5800659FC4 = {
 			isa = PBXGroup;
 			children = (
+				11546FC815E7B4F9002D4C96 /* README.md */,
 				11E1FB5915E66EAB00659FC4 /* SimpleSwitch */,
 				11E1FB2A15E66E5800659FC4 /* SimpleSwitchDemo */,
 				11E1FB4815E66E5900659FC4 /* SimpleSwitchDemoTests */,
@@ -145,6 +150,7 @@
 				11E1FB2D15E66E5800659FC4 /* InfoPlist.strings */,
 				11E1FB3015E66E5800659FC4 /* main.m */,
 				11E1FB3215E66E5800659FC4 /* SimpleSwitchDemo-Prefix.pch */,
+				11546FC715E7B4F9002D4C96 /* iOS Simulator Screen shot Aug 24, 2012 9.10.20 PM.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -256,6 +262,8 @@
 			files = (
 				11E1FB2F15E66E5800659FC4 /* InfoPlist.strings in Resources */,
 				11E1FB3B15E66E5900659FC4 /* ViewController.xib in Resources */,
+				11546FC915E7B4F9002D4C96 /* iOS Simulator Screen shot Aug 24, 2012 9.10.20 PM.png in Resources */,
+				11546FCA15E7B4F9002D4C96 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +472,7 @@
 				11E1FB5515E66E5900659FC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11E1FB5615E66E5900659FC4 /* Build configuration list for PBXNativeTarget "SimpleSwitchDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +481,7 @@
 				11E1FB5815E66E5900659FC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
