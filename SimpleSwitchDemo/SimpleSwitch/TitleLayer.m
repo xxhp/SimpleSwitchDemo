@@ -9,14 +9,12 @@
 #import "TitleLayer.h"
 
 @implementation TitleLayer
-@synthesize onString, offString, onTintColor;
+@synthesize onString, offString;
 
-@synthesize labelFont;
 - (void)dealloc
 {
 	[onString release];
 	[offString release];
-	[onTintColor release];
     
 	[super dealloc];
 }
@@ -27,7 +25,6 @@
 	{
 		self.onString = anOnString;
 		self.offString = anOffString;
-        labelFont = [UIFont systemFontOfSize:14];
 	}
     
 	return self;

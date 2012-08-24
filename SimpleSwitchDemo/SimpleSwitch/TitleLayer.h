@@ -11,9 +11,7 @@
 @interface TitleLayer : CALayer{
     
 }
-@property (nonatomic, retain) UIColor *onTintColor;
 @property (nonatomic, retain) NSString *onString;
 @property (nonatomic, retain) NSString *offString;
-@property (nonatomic, readonly) UIFont *labelFont;
 - (id)initWithOnString:(NSString *)anOnString offString:(NSString *)anOffString;
 @end
